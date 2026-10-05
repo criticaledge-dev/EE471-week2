@@ -6,8 +6,6 @@
 
 #Senior dev: ALPER
 
-#major lead comment
-
 caps = ['F', 'F', 'B', 'B', 'B', 'F', 'B',
         'B', 'B', 'F', 'F', 'B', 'F' ]
 cap2 = ['F', 'F', 'B', 'B', 'B', 'F', 'B', 'B', 'B', 'F', 'F', 'F', 'F' ]
