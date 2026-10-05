@@ -4,7 +4,7 @@
 #Output is a set of commands (printed out) to get either all F's or all B's
 #Fewest commands are the goal
 
-#This script is written by ALPER
+#Senior dev: ALPER
 
 caps = ['F', 'F', 'B', 'B', 'B', 'F', 'B',
         'B', 'B', 'F', 'F', 'B', 'F' ]
@@ -47,6 +47,15 @@ def pleaseConform(caps):
             #Exercise: if t[0] == t[1] change the printing!
             print ('People in positions', t[0],
                    'through', t[1], 'flip your caps!')
+
+def pleaseConformOnepass(caps):
+    caps = caps + [caps[0]]
+    for i in range(1, len(caps)):
+        if caps[i] != caps[i-1]:
+            if caps[i] != caps[0]:
+                print('People in positions', i, end='')
+            else:
+                print(' through', i-1, 'flip your caps!')
                 
             
 pleaseConform(caps)
